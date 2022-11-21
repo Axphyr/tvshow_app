@@ -1,0 +1,32 @@
+{
+    "name": "axphyr/tvshow_app",
+    "description": "Développement d'une application Web de consultation et modification de série",
+    "type": "project",
+    "license": "Copyleft",
+    "autoload": {
+        "psr-4": {
+            "" : "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Axphyr",
+            "email": "arber.jonuzi12345@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*",
+      "ext-ctype": "*"
+    },
+    "scripts": {
+        "run-server": [
+            "Composer\\Config::disableProcessTimeout",
+            "APP_DIR=\"$PWD\" php -d display_errors -S localhost:8000 -t public/ -d auto_prepend_file=\"$PWD/vendor/autoload.php\""
+        ],
+        "test:cs" : "php vendor/bin/php-cs-fixer fix --dry-run",
+        "fix:cs" : "php vendor/bin/php-cs-fixer fix"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8"
+    }
+}

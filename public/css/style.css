@@ -1,0 +1,240 @@
+
+@media mobile-first{
+}
+
+html{
+    width: 98%;
+    height: 98%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+header, footer{
+    position: sticky;
+    display: flex;
+    padding: 0.5em;
+    margin: 0.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin: 0.9rem;
+    padding: 0.4rem 1rem;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu a{
+    margin: 0.9rem;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    background-color: mediumseagreen;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button{
+    border-color: #e76161;
+    background: #e76161;
+    border-radius: 4px;
+}
+
+
+a.modifier{
+    background: cornflowerblue;
+}
+
+a.supprimer{
+    background: red;
+}
+
+.raccourci{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home, .retour{
+    margin: 1rem;
+    padding: 0.1rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: lightgray;
+    color: black;
+    font-size: 150%;
+}
+
+.retour:hover{
+    cursor: pointer;
+}
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.serie{
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.serie:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+}
+
+.info__serie{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.serie:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.intro__serie{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.intro__image{
+    width: 200px;
+    height: 300px;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.desc__serie{
+    padding: 0.5em;
+}
+
+.episode{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.season__name{
+    padding: 0.5em;
+}
+
+.info__ep{
+    display: flex;
+    flex-direction: row;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.episode__infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.long{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.episode__liste{
+    display: flex;
+    flex-direction: column;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.episode__num, .episode__desc{
+    padding: 0.25em;
+}
+
+img{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+a{
+    color: lightcoral;
+}
+
+.episode__liste:hover{
+    background: lightcoral;
+    color: black;
+    cursor: alias;
+}
+
+.episode:hover{
+    background: lightcoral;
+    color: black;
+    cursor: pointer;
+}
+
+.info__serie:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width: 1000px) {
+    html{
+        width: 1000px;
+        margin: auto;
+    }
+}

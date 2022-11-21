@@ -1,0 +1,4 @@
+/.idea/
+/vendor/
+.mypdo.ini
+.php-cs-fixer.cache
